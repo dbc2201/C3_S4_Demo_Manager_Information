@@ -27,4 +27,28 @@ public class Manager extends Employee {
         this.rating = rating;
         this.yearlyIncrement = yearlyIncrement;
     }
+
+    public int getTeamSize() {
+        return teamSize;
+    }
+
+    public void setTeamSize(int teamSize) {
+        this.teamSize = teamSize;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public double getYearlyIncrement() {
+        return yearlyIncrement;
+    }
+
+    public void setYearlyIncrement(double yearlyIncrement) {
+        this.yearlyIncrement = yearlyIncrement;
+    }
 }
