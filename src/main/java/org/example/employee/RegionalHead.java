@@ -6,5 +6,7 @@
 package org.example.employee;
 
 public class RegionalHead extends Employee {
-
+    private String regionName;
+    private String regionPerformance;
+    private int reviewRatings;
 }
