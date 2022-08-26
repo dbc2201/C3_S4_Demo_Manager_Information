@@ -9,13 +9,13 @@ import java.time.LocalDate;
 
 public class RegionalHead extends Employee {
     private String regionName;
-    private String regionPerformance;
+    private int regionPerformance;
     private int reviewRatings;
 
     public RegionalHead() {
     }
 
-    public RegionalHead(String name, int age, LocalDate dateOfBirth, String address, double salary, String regionName, String regionPerformance, int reviewRatings) {
+    public RegionalHead(String name, int age, LocalDate dateOfBirth, String address, double salary, String regionName, int regionPerformance, int reviewRatings) {
         super(name, age, dateOfBirth, address, salary);
         this.regionName = regionName;
         this.regionPerformance = regionPerformance;
@@ -30,11 +30,11 @@ public class RegionalHead extends Employee {
         this.regionName = regionName;
     }
 
-    public String getRegionPerformance() {
+    public int getRegionPerformance() {
         return regionPerformance;
     }
 
-    public void setRegionPerformance(String regionPerformance) {
+    public void setRegionPerformance(int regionPerformance) {
         this.regionPerformance = regionPerformance;
     }
 
@@ -44,5 +44,13 @@ public class RegionalHead extends Employee {
 
     public void setReviewRatings(int reviewRatings) {
         this.reviewRatings = reviewRatings;
+    }
+
+    public double calculateYearlyIncrement() {
+        if (regionPerformance > 8 && reviewRatings > 7) {
+            return 10.5;
+        } else {
+            return 0.0;
+        }
     }
 }
