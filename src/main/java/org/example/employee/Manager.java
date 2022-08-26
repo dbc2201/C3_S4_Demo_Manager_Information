@@ -6,5 +6,7 @@
 package org.example.employee;
 
 public class Manager extends Employee {
-
+    private int teamSize;
+    private int rating;
+    private double yearlyIncrement;
 }
