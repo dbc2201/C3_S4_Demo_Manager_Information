@@ -5,5 +5,6 @@
  */
 package org.example.employee;
 
-public class RegionalHead {
+public class RegionalHead extends Employee {
+
 }
