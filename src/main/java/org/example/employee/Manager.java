@@ -5,5 +5,6 @@
  */
 package org.example.employee;
 
-public class Manager {
+public class Manager extends Employee {
+
 }
