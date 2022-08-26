@@ -51,4 +51,12 @@ public class Manager extends Employee {
     public void setYearlyIncrement(double yearlyIncrement) {
         this.yearlyIncrement = yearlyIncrement;
     }
+
+    public double calculateYearlyIncrement() {
+        if (rating > 8.0) {
+            return 12.5;
+        } else {
+            return 0.0;
+        }
+    }
 }
